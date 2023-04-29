@@ -1,0 +1,425 @@
+<html>
+<head>
+    <link rel="stylesheet" href="estilos.css">
+    
+    <style>
+        *{margin: 0;}
+        #S1{background-color: rgb(156, 238, 156); }
+    #S2{background-color: rgb(165, 219, 226) ;} 
+     h1{text-align: center;
+        color: rgb(17, 10, 121);
+        text-decoration-line: underline;
+        text-decoration-style:wavy ;
+        text-decoration-color:rgb(17, 10, 121);
+     }  
+     
+     h2{color:rgb(34, 8, 82);
+           text-decoration-line: underline;
+           text-decoration-color: rgb(34, 8, 82);       
+    } 
+    h3{color: navy;
+           text-decoration-line: underline;
+           text-decoration-color: navy;   
+             } 
+    ul,ol{font-family: 'Source Sans Pro';
+            }
+    ol{border: 3px solid rgb(83, 81, 167);
+       background-color: rgb(114, 210, 223);
+    color: white;}
+    strong,em{ color:rgb(34, 8, 82)} 
+    #S1 ul{border:2px dashed rgb(219, 169, 151);
+       border-radius:20px; 
+       background-color: white;
+    }
+    #S2 h1 {color:orangered;
+            text-decoration-line:underline;
+            text-decoration-color: orangered;
+            text-decoration-style: double;}
+    #S2 h2 {color:orangered;
+            text-decoration-line:underline;
+            text-decoration-color: orangered;
+            text-decoration-style: solid;}
+    #S2 h3 {color:orangered;
+            text-decoration-line:underline;
+            text-decoration-color: orangered;
+            text-decoration-style: solid;}
+
+    #S2 ul{ background-color: rgb(213, 241, 250);   
+             border: 2px double rgb(83, 50, 233);
+             border-radius: 15px;}
+    #S1 td {border: 4px solid rgb(161, 216, 79);
+    font-size: 15px;}
+    #S1 th{border: 4px solid rgb(161, 216, 79);
+    font-size: 15px;}   
+      table{ margin: 0 auto;
+        background-color: rgb(58, 196, 99);;
+        color: whitesmoke;
+        padding: 50px;
+        border-collapse:collapse;
+    }
+    #S2 table{border: 3px solid rgb(144, 238, 241);
+        background-color: rgba(86, 124, 228, 0.699);
+               }
+  #S2 h3 em{color: orangered;}
+     
+    </style>
+</head>
+<body>
+   <header id="Header1">
+    <a href="#H" class="logo">
+        <img src="Img/HTML5.png" alt="logo">
+        <h2 class="HTML">HTML</h2>
+    </a>
+
+   <nav>
+    <a href="#T1" class="nav-link">Estructura Basica</a>
+     <a href="#T2" class="nav-link">Crear Listas </a>
+     <a href="#T3" class="nav-link">Imagen y Video</a>
+     <a href="#T4" class="nav-link">Hipervinculos</a>
+    
+     
+   </nav>
+</header>
+<body>
+    <header id="Header2">
+     <a href="#C" class="icono">
+         <img src="Img/CSS.png" alt="icono">
+         <h2 class="CSS">CSS</h2>
+     </a>
+ 
+    <nav>
+      <a href="#C1" class="nav-link">¿Como se Crea?</a>
+      <a href="#C2" class="nav-link">¿Como se Usa?</a>
+      <a href="#C3" class="nav-link">Pseudo-clases</a>
+      <a href="#C3" class="nav-link">Selectores</a>
+      
+      
+    </nav>
+ </header>
+ <div id="S1">
+ <h1 id="H">HTML</h1> 
+ <p>HTML (Lenguaje de marcado de Hipertexto) es un lenguaje utilizado para crear
+    paginas web y consiste en un conjunto  de etiquetas que se utilizan para definir 
+    <strong>la estructura y el contenido</strong> de la pagina , estas etiquetas marcan 
+    un <strong>inicio y un final </strong>  en los elementos que contiene una pagina web como: 
+    encabezados, parrafos, imagenes, enlaces,etc.<br> Usando una etiqueta de apertura y otra de cierre. </p>
+   
+    <table>
+        <tr>
+            <th><code>&lt;Etiqueta&gt;</code></th>
+            <th><code>&lt;/Etiqueta&gt;</code></th>
+        </tr>
+        <tr>
+            <td>"Apertura"</td>
+            <td>"Cierre"</td>
+        </tr>
+    </table>
+      <h2 id="T1">Estructura Basica de HTML</h2> 
+      <p>La estructura basica en html consta de una serie de Elementos anidados
+        se abre con la etiqueda <strong>"Html"</strong> la cual contiene dos 
+        elementos principales: el encabezado <strong>"Head"</strong> y el 
+        cuerpo <strong>"Body"</strong>.
+      </p> 
+      &nbsp;
+      
+      <table>
+        <td>
+      <code>&lt;html&gt;</code><br>
+      <code>&nbsp;&lt;head&gt;</code><br>
+      <code>&nbsp;&lt;/head&gt;</code><br>
+      <code>&nbsp;&lt;/body&gt;</code><br>
+      <code>&nbsp;&nbsp;&nbsp;&lt;h1&gt;</code>"Ejemplo de Titulo"<code>&lt;/h1&gt;</code><br>
+      <code>&nbsp;&nbsp;&nbsp;&lt;p&gt;</code>"Ejemplo de Parrafo"<code>&lt;/p&gt;</code><br>
+      <code>&nbsp;&lt;/body&gt;</code><br>
+      <code>&lt;/html&gt;</code>
+    </td>
+</table>
+<h2>Etiquetas Basicas de Html</h2>
+     <p>Las Etiquetas elementos que representan una acccion especifica para que sea 
+       interpretado por el navegador algunos ejemplos son: </p>
+       
+      <ul>
+    <li> <strong>&lt;h1&gt; &lt;h2&gt; &lt;h3&gt; &lt;h4&gt; &lt;h5&gt; &lt;h6&gt;</strong>&nbsp;.-
+        Permite jerarquizar el contenido, son los que se conocen como titulos y subtitulos, 
+        la especificacion puee ser de diferentes tamaños y niveles.</li>
+       <li> <strong>&lt;p&gt;</strong>&nbsp;.- Es una etiqueta de contenido, se utiliza para crear parrafos de texto</li>
+       <li><strong>&lt;br&gt;</strong>&nbsp;.- Implementa un salto de linea dentro del texto, haciendo la funcion de 
+        la tecla <em>"Enter"</em> del Teclado </li> 
+    </ul> 
+    <h3>Etiquetas de Estilo</h3>
+    <ul>
+        <li><strong>&lt;em&gt;</strong>&nbsp;.- Marca con enfasis la parte de un texto seleccionado.</li>
+        <li><strong>&lt;strong&gt;</strong>&nbsp;.- Resalta el contenido de un texto con <em>"Negrilla".</em></li>
+        <li><strong>&lt;code&gt;</strong>&nbsp;.- Permite insertar texto que representa codigo de computadora. 
+          Permite mostrar funciones, codigo de progaramacion o variables.</li>
+    </ul> 
+ <h3 id="T2">Etiquetas de Creacion de Listas</h3>
+  <ul>
+    <li><strong>&lt;li&gt; </strong>Listas no Ordenadas&nbsp;.-<em>(Unorder list)</em> Esta etiqueta sirve para
+        crear una lista desordenada.</li>
+    <li><strong>&lt;ol&gt; </strong>Listas Ordenadas&nbsp;.-<em>(Ordered list)</em> Esta etiqueta representa
+        una lista ordenada de items.</li>
+    <li><strong>&lt;li&gt; </strong> &nbsp;.-<em>(List Items)</em> Se usa para especificar los items de la lista,
+        ya sea en la etiqueta <strong>"ul" y "ol".</strong></li>
+ </ul>
+ <table>
+    <td>
+        &lt;ul&gt;<br>
+        &nbsp;&nbsp; &lt;li&gt; "Ejemplo A" &lt;/li&gt;<br>
+        &nbsp;&nbsp; &lt;li&gt; "Ejemplo B" &lt;/li&gt;<br>
+        &nbsp;&lt;/ul&gt;<br>
+        <br>
+        &nbsp;&lt;ol&gt;<br>
+        &nbsp;&nbsp; &lt;li&gt; "Ejemplo X" &lt;/li&gt;<br>
+        &nbsp;&nbsp; &lt;li&gt; "Ejemplo Y" &lt;/li&gt;<br>
+        &nbsp;&lt;/ol&gt;
+</td>
+</table>
+<ul>
+    <li><strong>&lt;dl&gt; Listas de Deiniciones</strong> &nbsp;.-<em>(Definition list)</em> Esta etiqueta representa
+        una lista descriptiva.</li>
+    <li><strong>&lt;dt&gt; </strong> &nbsp; .- Especifica un termino en una descripcion o lista de definiciones.</li>
+    <li><strong>&lt;dd&gt; </strong> &nbsp; .- Provee detalles o el significado de la definicion de un termino</li>
+ </ul>
+ <table>
+    <td>
+        &lt;dl&gt;<br>
+        &nbsp;&nbsp; &lt;dt&gt; "Ejemplo de un Termino" &lt;/dt&gt;<br>
+        &nbsp; &nbsp; &nbsp; &lt;dd&gt; "Ejemplo de Descripcion" &lt;/dd&gt;<br>
+        &nbsp;&lt;/dl&gt;<br>
+    </td>
+</table>
+<h3 id="T3">Etiquetas para insertar Imagen y Video</h3>
+<ul>
+    <li><strong>&lt;img&gt;</strong> &nbsp;.- Esta etiqueta permite insertar imagenes en una pagina web introduciendo 
+         algunos parametros o propiedades que son: </li>
+    <p><em>"src"</em> - Esta propiedad se usa para especificar la ruta de la imagen que se va a mostrar, citando su 
+     ubicacion y el nombre del archivo, seguido del formato que puede ser tipo Raster (.png .jpg) y Vectorial (.svg .pdf).<br>
+     <em>"alt"</em> - Esta propiedad se utiliza para agregar un texto alternativo para la imagen cuando no se pueda mostrar
+        por algun motivo.<br>
+    <em>"width" y "height"</em> - Estas propiedades especifican el ancho y el alto de un elemento respectivamente en pixeles</p>    
+    <li><strong>&lt;video&gt; </strong> &nbsp; .- Se utiliza para insertar videos en una pagina web, se aplican las propiedades
+         <em>"src","width" y "height"</em> y se emplementa la propiedad:</li>
+    <P><em>"controls"</em>  -Se utiliza para mostrar los controles de reproductor de video en la pagina web, como el boton de 
+         reproduccion, pausa y volumen.</P>
+ </ul>
+ <table>
+    <td>
+        &lt;img <em>src</em>="Ruta/Nombre de Imagen" <em>width</em>="valor px" <em>alt=</em>"texto alternatvo" &gt;<br>
+        &lt;/img&gt;<br>
+        <br>
+        &lt;video <em>src</em>="Ruta/Nombre del video" <em>controls</em> <em>height=</em>"valor px" &gt;<br>
+        &lt;/video&gt;<br>
+</table>
+ <a href="ImgVid.html">
+    <img src="Img/Ej.jpeg" alt="Ejemplo" width="200px">
+ </a>
+
+ <h3>Etiqueta de Estructuracion</h3>
+ <ul>
+    <li><strong>&lt;Div&gt;</strong> &nbsp;.- Se usa para dividir el contenido de una pagina Web en secciones, no tiene ningun
+      significado semantico en si mismo pero puede ser usado para agrupar y ordenar otros elementos usando la propiedad: </li>
+</ul>
+    <p> <em>"id"</em> - que define un identificador único el cual no debe repetirse en todo el documento</p>
+    <table>
+        <td>
+            &lt;div <em>id</em>= "Ejemplo de Identificador" &gt;<br>
+            &nbsp;&nbsp; &lt;h2&gt; "Ejemplo" &lt;/h2&gt;<br>
+            &nbsp;&nbsp; &lt;p&gt; "Ejemplo" &lt;/p&gt;<br>
+            &nbsp;&lt;/div&gt;<br>
+         </td>
+    </table>
+    <h3 id="T4">Hipervinculos</h3>
+    <p>Los Hipervinculos en HTML son enlaces que permiten al usuario navegar ya sea de una pagina web a otra o a una seccion 
+        especifica dentro de la misma pagina web usando la etiqueta. </p>
+        <ul>
+            <li><strong>&lt;a&gt;</strong> &nbsp;.- Que permite crear un enlace (Link)  junto con la propiedad <em>"href"</em>
+            que especificara la ulr del destino ya sea un archivo, una pagina web, seguido de una descripcion. </li>
+        </ul>   
+        <table>
+            <td>
+                <strong>Para un Hipervinculo Externo</strong><br>
+                &lt;a <em>href</em>= "Nombre de Archivo o Pagina Web" &gt; "Descripcion"<br>
+                &nbsp;&lt;/a&gt;<br>
+                <br>
+                <strong>Para un Hipervinculo dentro de la misma Pagina Web</strong><br>
+                &lt;a <em>href</em> = # "Nombre de Id" &gt; "Descripcion"<br>
+                &nbsp;&lt;/a&gt;<br>
+                
+        </td>
+    </table> 
+</div>    
+<div id="S2">
+    <h1 id="C">CSS</h1>     
+     <p>CSS o <em>"Hojas de Estilo Cascada"</em> es un lenguaje de estilo que se utiliza para dar formato y estilo a los documentos
+    <strong>HTML</strong>. Permite controlar la presentacion visual de los elementos como el color, la tipografia, el tamaño y la 
+     posicion. </p>
+     <h2 id="C1">¿Como se Crea?</h2>
+      <p>Existen 3 formas para poder crear estilos en un documento <em>"HTML"</em> las cuales son:</p>
+      <ol>
+           <li>En la propia Etiqueta.</li>
+           <li>En el <em>"Head"</em> de la Pagina.</li>
+           <li>En un Archivo Externo.</li>
+      </ol>
+    <h3>1. En la propia Etiqueta</h3>
+      <p>Se crea utilizando el parametro <em>"Style"</em> y esta se aplica directamente a una etiqueta dentro 
+        del docuemnto <strong>HTML.</strong></p>
+        <table>
+            <td>
+                &lt;h1 <em>style</em> =color:"valor" &gt; &nbsp;&lt;/h1&gt;         
+        </td>
+      </table>
+    <h3>2. En en <em>Head</em> de la pagina</h3> 
+     <p>Se crea utilizando la etiqueta &nbsp;&lt;style&gt; la cual indicara la informacion de stilo que se quiere agregar, el cual debe
+        ir dentro de la etiqueta basica <strong>&nbsp;&lt;Head&gt;</strong> del mismo docuemnto <em>HTML.</em></p>
+    <table>
+         <td>
+            &lt;head&gt;<br>  
+            &nbsp;  &lt;style&gt;<br> 
+            &nbsp;  &nbsp;  &nbsp; &nbsp;  h1 {<br>
+            &nbsp;  &nbsp;  &nbsp; &nbsp; &nbsp;color:"valor";<br>
+            &nbsp;  &nbsp;  &nbsp; &nbsp; &nbsp;border:"valor";<br>
+            &nbsp;  &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; } <br>
+            &nbsp;  &lt;/style&gt;<br> 
+            &lt;/head&gt;<br> 
+        </td>           
+    </table>
+    <h3>3. En un Archivo Externo</h3>
+    <p>Se crea usando la etiqueta &nbsp;&lt;link&gt; que especifica la relacion entre el documento actual y un recurso externo. seguido de las 
+        propiedades <strong><em>"href" y "rel"</em></strong> las cuales permiten citar y especificar el enlace a una hoja externa. Las cuales
+        deben ir dentro de la etiqueta <strong>&nbsp;&lt;Head&gt;</strong> del mismo docuemnto <em>HTML.</em></p>
+       
+        <table>
+            <td>
+               &lt;head&gt;<br>  
+               &nbsp;  &lt;link <em>href</em>="nombre de archivo.css" <em>rel</em>="stylesheet"&gt;<br> 
+               &lt;/head&gt; 
+           </td>           
+       </table>
+    <h2 id="C2">¿Como se Usa?</h2>  
+     <p>Para aplicar un estilo se debe aplicar en el siguiente orden:</p>
+     <table>
+        <td>
+          
+          <strong>SELECTOR</strong> {<br>
+           &nbsp;  &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Propiedad:<em>"valor"</em> ;<br>
+           &nbsp;  &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; } 
+       </td>           
+   </table>
+   <h3>-Selector</h3> 
+   <p>Un selector es un patron utilizado para seleccionar y aplicar estilos a un conjunto de elementos <em>HTML</em>, hay varios tipos de 
+      selectores en <em>CSS</em> entre ellos:</p>
+   <ul>
+    &nbsp;  &nbsp; <li>Selector de Etiqueta <em>(h1,p,ul...)</em></li>
+    &nbsp;  &nbsp; <li>Selector de "id" <em></em>(#midiv, #div1...)</li>
+    &nbsp;  &nbsp; <li>Selector de "clase" <em>(.C1, .clase1...)</em></li>
+   </ul>   
+   <h3>-Propiedad y Valor</h3>
+   <p>Una propiedad es un atributo que se aplica a un elemento o etiqueta de un docuemnto <em>HTML</em> para controlar su estilo
+    visual y que cada una debe tener un valor que define como se aplicara a la propiedad.   </p>  
+
+    <h3>Propiedades para Aplicar Bordes</h3> 
+    <p>La propiedad utilizada es <strong>"border"</strong> seguido de un valor que puede ser en pixeles <em>("px")</em> que definira el
+        grosor de linea de borde a la vez nos permite asignar un valor de color de borde ,tambien se puede especificar un estilo de linea de borde con valores como:</p>
+     <ul>
+     <li><em>"solid"</em> : linea solida.</li>
+     <li><em>"dashed"</em>: puntos de linea.</li>
+     <li><em>"dotted"</em>:  puntos.</li>
+     <li><em>"double"</em>: doble linea.</li>
+     </ul>     
+     <p>Otras propiedades para estilo de bordes son: <br> 
+     <strong><em>"padding"</em></strong> que se utiliza para establecer el espacio o margen interior entre el borde de un elmento y su contenido.<br>
+     <strong><em>"border-raduis"</em></strong> que es para dar un aspecto redondeado o curvo al borde, seguido de un valor en pixeles. <em>("px")</em> o porcentaje (%).</p> 
+    <table>
+        <td>
+         h1 {<br>
+           &nbsp;  &nbsp;  &nbsp; &nbsp; &nbsp;border:"valor en (px)" <em>solid</em> "valor de color";<br>
+           &nbsp;  &nbsp;  &nbsp; &nbsp; &nbsp;padding:"valor en (px) o (%)";<br>
+           &nbsp;  &nbsp;  &nbsp; &nbsp; &nbsp;border-radius:"valor en (px) o (%)";<br>
+           &nbsp; &nbsp; &nbsp; } <br> 
+       </td>           
+   </table>
+   <h3>Propiedades para estilo Texto</h3> 
+   <p> <strong><em>"color"</em></strong> Se utiliza para dar un color al contenido seguido de un valor que puede ser en codigo # ,o directamente el texto como (red, blue, 
+    white, etc).<br>
+    <strong><em>"background-color"</em></strong> Para establecer el color de fondo seguido de su respectivo valor.<br>
+    <strong><em>"text-aling"</em></strong> Establece la alineacion horizontal de un texto cuyo valor puede ser:</p>
+    <ul>
+        <li><em>"left"</em> : alineacion a la izquierda.</li>
+        <li><em>"center"</em> : alineacion centrada.</li>
+        <li><em>"right"</em> : alineacion a la derecha.</li>
+        <li><em>"justify"</em> : alineacion justificada.</li>   
+    </ul>
+    <p><strong><em>"font-family"</em></strong> Establece una fuente o tipo de letra al contenido del selector "HTML" cuyo valor sera un nombre de fuente como por 
+    ejemplo "Helvetica", "Arial" , "courier new" ,etc.</p>
+    <table>
+        <td>
+         h1 {<br>
+           &nbsp;  &nbsp;  &nbsp; &nbsp; &nbsp;color:"valor de color";<br>
+           &nbsp;  &nbsp;  &nbsp; &nbsp; &nbsp;background-color: "valor" ;<br>
+           &nbsp;  &nbsp;  &nbsp; &nbsp; &nbsp;text-aling: "valor" ;<br>
+           &nbsp;  &nbsp;  &nbsp; &nbsp; &nbsp;font-family: "nombre de fuente" ;<br>
+           &nbsp; &nbsp; &nbsp; } 
+       </td>           
+   </table>
+   <p><strong><em>"box-shadow"</em></strong> Esta propiedad permite agregar una sombra a un elemento de  la pagina web, cuyos 
+    valores permiten asignar y modificar el desplazamiento tanto horizontal y vertical de la sombra tambien el desenfoque y la extension
+  de la sombra con parametros en <em>(px)</em> ademas de poder dar un valor de color</p>  
+  <table>
+    <td>
+     p {<br>
+       &nbsp;  &nbsp;  &nbsp; box-shadow: 0px 0px 0px 0px  "valor color" ;<br>
+        &nbsp; &nbsp; } 
+   </td>           
+</table>
+   <h3>Propiedades de subrayado</h3>
+    <p>Existen deiferentes tipos de subrayado que se puede aplicar a los textos usando las siguientes propiedades:<br>
+    <strong><em>"text-decoration-line"</em></strong> con el valor <em>"underline"</em> que aplica un subrayado de linea por defecto. <br>
+    <strong><em>"text-decoration-color"</em></strong> para establecer un color de subrayado seguido de su propio valor. <br>
+    <strong><em>"text-decoration-style"</em></strong> permite colocar un estilo al subrayado usando valores como:  </p>
+    <ul>
+        <li><em>"dotted"</em> : subrayado punteado.</li>
+        <li><em>"dashed"</em> : subrayado con guiones.</li>
+        <li><em>"double"</em> : subrayado doble linea.</li>
+        <li><em>"wavy"</em> : subrayado ondulado.</li>   
+    </ul>
+    <table>
+        <td>
+         h1 {<br>
+           &nbsp;  &nbsp;  &nbsp; &nbsp; &nbsp;text-decoration-line: underline ;<br>
+           &nbsp;  &nbsp;  &nbsp; &nbsp; &nbsp;text-decoration-color: "valor de color" ;<br>
+           &nbsp;  &nbsp;  &nbsp; &nbsp; &nbsp;text-decoration-style: "valor de un estilo" ;<br>
+           &nbsp; &nbsp; &nbsp; } 
+       </td>           
+    </table>
+    <h3 id="C3">Pseudo-classes</h3>
+    <p> Una pseudoclase en CSS es una palabra clave que se añade a los selectores y que especifica un estado especial del elemento seleccionado.<br>
+    <strong><em>"hover"</em></strong> Se utiliza para seleccionar y dar estilo al pasar con el puntero del mouse por encima de un elemento.  <br>
+    <strong><em>"focus"</em></strong> Representa un elemento (como una entrada de formulario) que ha recibido el foco. Generalmente se activa cuando el usuario
+     hace clic, toca un elemento o lo selecciona.  </p>
+
+     <a href="form.html">
+        <img src="Img/Ej.jpeg" alt="Ejemplo" width="200px">
+     </a>
+
+     <h3 id="C4">Selectores Multiples y Anidados</h3>
+   <p><strong><em>Selectores Multiples</em></strong>.- Permiten aplicar estilos a varios elementos a la vez. Para hacer esto, se utiliza 
+    una <em>coma (,)</em>  para separar los selectores. <br>
+    <p><strong><em>Selectores Anidados</em></strong>.- Son aquellos que se utilizan para seleccionar elementos dentro de otros 
+    elementos. Para hacer esto, se utiliza la sintaxis de un selector dentro de otro separados unicamente por la tecla <em>espaciadora (_)</em> </p>
+    <table>
+        <td>
+            <strong>Para Selectores Multiples</strong><br>
+             h1, h2, p, ul  { <br>
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <em>("Propiedades y Valor")</em> <br>
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }<br>
+            <br>
+            <strong>Para Selectores Anidados</strong><br>
+            .clase1 h1 p { <br>
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <em>("Propiedades y Valor")</em> <br>
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  }           
+        </td>
+    </table>
+</div>
+</body>
+</html>

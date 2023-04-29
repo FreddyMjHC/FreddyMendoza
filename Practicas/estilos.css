@@ -1,0 +1,66 @@
+#header1 { 
+         display: flex;
+         min-height: 70px;
+         background-color: rgb(245, 221, 142) ;
+         justify-content: space-between;
+         margin: 0;
+         align-items: center;
+         font-family: Times;
+         padding: 10px;
+         
+      }
+      .HTML{color: red;
+            text-decoration: none;}
+      .CSS{color: blue;
+        text-decoration: none}
+ .logo {
+        display: flex ;
+ }     
+ .logo img {height: 50px;
+             margin-right: 10px;
+}
+     #header1 a{  text-decoration: none;
+          color: red; }
+ nav a{  font-weight: 600;
+        padding-right: 10px;
+        }
+ #header1 nav a:hover{
+     color: blue;
+ } 
+ @media (max-width:700px){
+    #header1 { flex-direction: column;}
+
+ }
+  nav{padding: 10px 0px;}
+#header2 { 
+    display: flex;
+    min-height: 70px;
+    background-color: rgb(139, 236, 236);
+    justify-content: space-between;
+    margin: 0;
+    align-items: center;
+    font-family: Times;
+    padding: 10px;
+    font-family: 'Courier New';
+ }
+.icono {
+   display: flex ;
+}     
+.icono img {height: 50px;
+        margin-right: 10px;
+}
+#header2 a{  text-decoration: none;
+     color:blue   }
+ #header2 nav a{  font-weight: 600;
+   padding-right: 10px;
+   
+
+}
+#header2 nav a:hover{
+color: red;
+} 
+@media (max-width:700px){
+#header2{ flex-direction: column;}
+}
+nav{padding: 10px 0px;}
+#header1,#header2{border:2px solid black}
